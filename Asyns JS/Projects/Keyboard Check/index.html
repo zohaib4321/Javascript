@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #414141;
+        color: aliceblue;
+    }
+        
+    .key{
+        font-size: 25pt;
+        text-align: center;
+        margin-top: 400px;
+    }
+
+    h2{
+        font-size: 25pt;
+        text-align: center;
+        margin-top: 400px;
+    
+    }
+
+</style>
+
+<body>
+    <div class="project">
+        <div id="insert">
+            <div class="key">
+                Press the key and watch magic
+            </div>
+        </div>
+    </div>
+<script>
+    let insert = document.querySelector('#insert');
+    window.addEventListener('keydown', (e) => {
+        insert.innerHTML = `
+        
+        <h2>${e.code} key is pressed whose keycode is ${e.keyCode}</h2>`
+    
+})
+</script>    
+</body>
+</html>
