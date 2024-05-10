@@ -87,16 +87,10 @@ let numbers = [1, 2, 3]
 //                     .filter( (num) => num > 6 ))
 
 let total = numbers.reduce((acc, curval) => {
-    console.log(`acc: ${acc} and curval: ${curval}` );
+    // console.log(`acc: ${acc} and curval: ${curval}` );
     return acc + curval
 }, 0)
 
-console.log(total)
+// console.log(total)
 
-
-
-
-
-
-
-
+numbers.forEach(num => console.log(num))

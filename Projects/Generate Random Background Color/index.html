@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				background-color: #414141;
+				color: aliceblue;
+				font-family: monospace;
+			}
+			button {
+				height: 50px;
+				width: 100px;
+				font-size: 16pt;
+				border-radius: 100px;
+				font-family: monospace;
+				border: 1px solid black;
+			}
+			button:focus {
+				border-color: rgba(19, 228, 200, 0.538);
+			}
+			button:hover {
+				border-color: rgba(19, 228, 200, 0.538);
+			}
+		</style>
+		<title>Async JS</title>
+	</head>
+	<body>
+		<h1>Start should change the background color every second</h1>
+		<button id="start">Start</button>
+		<button id="stop">Stop</button>
+
+		<script>
+		// 	setTimeout(function () {
+		// 		console.log("Hello Zohaib");
+		// 	}, 2000);
+
+		// 	function sayHello() {
+		// 		console.log("Hello Zohaib");
+		// 	}
+		// 	setTimeout(sayHello, 2000);
+
+		// 	const changeText = () => {
+		// 		document.querySelector("h1").innerHTML = "Welcome to JavaScript";
+		// 	};
+
+		// 	const changeH1 = setTimeout(changeText, 2000);
+
+		// 	document.querySelector("#stop").addEventListener("click", () => {
+		// 		clearTimeout(changeH1);
+		// 	});
+
+		// 	SetInterval;
+
+		// 	setInterval(function () {
+		// 		console.log("Hello");
+		// 	}, 1000);
+
+		// 	const set = function () {
+		// 		console.log("Hello");
+		// 	};
+
+		// 	const interval = setInterval(set, 1000);
+
+		// 	document.querySelector("#start").addEventListener("click", () => {
+		// 		let set = setInterval(function () {
+		// 			console.log("Hello");
+		// 		}, 1000);
+		// 	});
+
+		// 	document.querySelector("#stop").addEventListener("click", () => {
+		// 		clearInterval(set);
+		// 	});
+		</script>
+		<script src="./index.js"></script>
+	</body>
+</html>
